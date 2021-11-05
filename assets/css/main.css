@@ -177,6 +177,7 @@
 .product__item-link{
     display: block;
 }
+
 .product__info{
     align-items: center;
     display: flex;
@@ -185,6 +186,9 @@
     border-radius: 50%;
     width: 86px;
     height: 86px;
+}
+#pills-tab .selected .product__info  {
+    background-color: #fb8d17;
 }
 
 .product__item-img{
