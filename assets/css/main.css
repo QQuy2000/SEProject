@@ -218,7 +218,8 @@
     border-radius: var(--border-radius);
     font-size: 16px;
     margin-top: 20px;
-    margin-left: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
     
 }
 .product-card--image{
