@@ -1,8 +1,10 @@
 const  handleMenuTab1 = async ()=>{
     const response = await fetch('https://617bd868d842cf001711c0fe.mockapi.io/item');
     const myJson = await response.json();
-    
-    const html = myJson.map((items) =>{
+    let newJson = [];
+    if(myJson.length>12)
+        newJson = myJson.slice(0,12);
+    const html = newJson.map((items) =>{
         // console.log(items);
     return `
     <div class="product-card">
@@ -28,8 +30,10 @@ const  handleMenuTab1 = async ()=>{
 const  handleMenuTab2 = async ()=>{
     const response = await fetch('https://617bd868d842cf001711c0fe.mockapi.io/item2');
     const myJson = await response.json();
-    
-    const html = myJson.map((items) =>{
+    let newJson = [];
+    if(myJson.length>12)
+        newJson = myJson.slice(0,12);
+    const html = newJson.map((items) =>{
         // console.log(items);
     return `
     <div class="product-card">
@@ -55,8 +59,10 @@ const  handleMenuTab2 = async ()=>{
 const  handleMenuTab3 = async ()=>{
     const response = await fetch('https://617bd868d842cf001711c0fe.mockapi.io/item3');
     const myJson = await response.json();
-    
-    const html = myJson.map((items) =>{
+    let newJson = [];
+    if(myJson.length>12)
+        newJson = myJson.slice(0,12);
+    const html = newJson.map((items) =>{
         // console.log(items);
     return `
     <div class="product-card">
