@@ -7,7 +7,7 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0 , 0.1);
     position: fixed;
     width: 100%;
-
+    z-index: 1000;
 }
 .header__nav{
     display: flex;
@@ -119,20 +119,31 @@
 
 .promotion{
     background-image: linear-gradient(0,#ffb141, #fb8d17);
-    height: var(--body-promotion-height);
-}
-
-
-
-.promotion__banner-link{
-    display: block; 
-}
-
-.promotion__banner-img{
+    /* height: 70vh; */
     width: 100%;
-    margin: 35px 0; 
+    padding-top: 20px;
+    padding-bottom: 20px;
     
 }
+
+.promotion-container{
+
+}
+.promotion-indicator{
+    margin-bottom: -20px !important;
+    height: 20px;
+}
+
+.promotion-carousel--item{
+    width: 80vh;
+}
+.promotion-image{
+    max-width: 1000px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .product__heading{
     font-size: 28px;
@@ -150,8 +161,9 @@
 .product__list{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    margin: 20px 150px 0 150px;
+    justify-content: center;
+    margin: 20px 0px 0 0px;
+    font-size:0;
 }
 
 .product__item{
@@ -159,6 +171,8 @@
     border-radius: 50%;
     width: 86px;
     height: 86px;
+    display: block;
+    float: left;
 }
 
 .product__item-link{
@@ -180,6 +194,68 @@
     display: inline-block;
     
 }
+.product-menu{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-card--container{
+    display: flex;
+    flex-wrap:wrap;
+}
+.product-card--info{
+    width: 155px;
+    margin-top: 5px;
+}
+.product-card{
+    box-shadow: 0px 10px 20px rgba(0, 0, 0 , 0.1);
+    width: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 32px;
+    
+}
+.product-card--image{
+    margin-top: 5px;
+}
+#product-name{
+    margin: 5px;
+    
+}
+.product-card--image img{
+    width: 145px;
+    height: 145px;
+    border-radius: var(--border-radius);
+}
+.product-card--footer {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    line-height: 35px;
+    margin: 5px;
+    margin-top: 30px;
+
+}
+
+
+
+.product-card--button{
+    margin-right: 5px;
+    display: inline-block;
+    width: 32px;
+    line-height: 32px;
+    height: 32px;
+    background-color: #fc8e19;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
 
 .footer__content{
     color: var(--white);

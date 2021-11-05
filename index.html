@@ -11,7 +11,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"  rel="stylesheet"/>
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <link  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"  rel="stylesheet"/>
 </head>
 <body>
     <div class="app">
@@ -67,14 +69,96 @@
         
         <div class="body">
             <div class="promotion">
-                <div class="container">
-                    <div class="promotion__banner">
-                        <a href="" class="promotion__banner-link">
-                            <img src="./assets/images/BANNERWEB(5)_846453.jpeg" alt="promotion1" class="promotion__banner-img">
-                        </a>
-                    </div>   
-                </div>
+                <div class="promotion-container">
+                <div
+                id="carouselBasicExample"
+                class="carousel slide carousel-fade"
+                data-mdb-ride="carousel"
+                >
+                <!-- Indicators -->
+                    <div class="carousel-indicators promotion-indicator">
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselBasicExample"
+                            data-mdb-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselBasicExample"
+                            data-mdb-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-mdb-target="#carouselBasicExample"
+                            data-mdb-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+
+                    <!-- Inner -->
+                    <div class="carousel-inner">
+                <!-- Single item -->
+                    <div class="carousel-item promotion-carousel--item active">
+                        <img
+                        src="./assets/images/promotion1.jpg"
+                        class="d-block w-100 promotion-image"
+                        alt="..."
+                        />
+                        
+                    </div>
+
+                <!-- Single item -->
+                    <div class="carousel-item promotion-carousel--item">
+                        <img
+                        src="./assets/images/promotion1.jpg"
+                        class="d-block w-100 promotion-image"
+                        alt="..."
+                        />
+                        
+                    </div>
+
+                <!-- Single item -->
+                    <div class="carousel-item promotion-carousel--item">
+                        <img
+                        src="./assets/images/promotion1.jpg"
+                        class="d-block w-100 promotion-image"
+                        
+                        alt="..."
+                        />
+                        
+                    </div>
+                    </div>
+                <!-- Inner -->
+
+                <!-- Controls -->
+                        <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#carouselBasicExample"
+                        data-mdb-slide="prev"
+                        >
+                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#carouselBasicExample"
+                        data-mdb-slide="next"
+                        >
+                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                <!-- Carousel wrapper -->
             </div>
+        </div>
 
             <div class="product">
                 <div class="container">
@@ -82,63 +166,88 @@
                         <i class="product__heading-icon fas fa-award"></i>
                         <span >Products</span>
                     </div>
-                    <ul class="product__list">
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                    <img class="product__item-img"  src="./assets/images/cate_favourite.png" alt="cate_favourite">
-                                </div>
-                            </a>
-                            
-                        </li>
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                    <img class="product__item-img" src="./assets/images/cg_coffee_web.png" alt="cate_favourite">
-                                </div>
-                            </a>
-                            
-                        </li>
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                    <img class="product__item-img" src="./assets/images/cg_tea_milk_tea_web.png" alt="cate_favourite">
-                                </div>
+
+                    <div >
+                        <div class="product-menu">
+                            <ul class="nav  product__list"  id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <div class="nav-link active" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="true">
+                                        <div class="product__item-link"     >
+                                            <div class="product__info">
+                                                <img class="product__item-img"  src="./assets/images/cate_favourite.png" alt="cate_favourite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <div class="nav-link" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink" type="button" role="tab" aria-controls="pills-drink" aria-selected="false">
+                                        <div class="product__item-link"     >
+                                            <div class="product__info">
+                                                <img class="product__item-img"  src="./assets/images/cg_coffee_web.png" alt="cate_favourite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <div class="nav-link" id="pills-hamburger-tab" data-bs-toggle="pill" data-bs-target="#pills-hamburger" type="button" role="tab" aria-controls="pills-hamburger" aria-selected="false">
+                                        <div class="product__item-link"     >
+                                            <div class="product__info">
+                                                <img class="product__item-img"  src="./assets/images/cg_tea_milk_tea_web.png" alt="cate_favourite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                                 
-                            </a>
-                            
-                        </li>
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                    <img class="product__item-img" src="./assets/images/cg_frappu_web.png" alt="cate_favourite">
-                                </div>
+                                <li class="nav-item" role="presentation">
+                                    <div class="nav-link" id="pills-hamburger2-tab" data-bs-toggle="pill" data-bs-target="#pills-hamburger2" type="button" role="tab" aria-controls="pills-hamburger2" aria-selected="false">
+                                        <div class="product__item-link"     >
+                                            <div class="product__info">
+                                                <img class="product__item-img"  src="./assets/images/cg_tea_milk_tea_web.png" alt="cate_favourite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <div class="nav-link" id="pills-hamburger2-tab" data-bs-toggle="pill" data-bs-target="#pills-hamburger2" type="button" role="tab" aria-controls="pills-hamburger2" aria-selected="false">
+                                        <div class="product__item-link"     >
+                                            <div class="product__info">
+                                                <img class="product__item-img"  src="./assets/images/cg_tea_milk_tea_web.png" alt="cate_favourite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                                 
-                            </a>
-                            
-                        </li>
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                     <img class="product__item-img" src="./assets/images/cg_cpg_web.png" alt="cate_favourite">
-                                </div>
-                            </a>
-                            
-                        </li>
-                        <li class="product__item">
-                            <a class="product__item-link" href="">
-                                <div class="product__info">
-                                    <img class="product__item-img" src="./assets/images/cg_merchandise_web.png" alt="cate_favourite">
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active " id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
+                            <div class="product-card--container" id="first-menu-tab">
+                           
+                            <!-- ---------------------------- -->
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="product-card--container" id="second-menu-tab">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-hamburger" role="tabpanel" aria-labelledby="pills-hamburger-tab">
+                            <div class="product-card--container" id="third-menu-tab">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-hamburger2" role="tabpanel" aria-labelledby="pills-hamburger2-tab">
+                            <div class="row row-cols-1 row-cols-md-4 g-4" id="Hamburgertab">
+                                c
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
                 
             <div class="news">
 
+            
             </div>
         </div>
         <footer class="footer">
@@ -175,5 +284,8 @@
             </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
 </body>
 </html>
