@@ -121,3 +121,16 @@ var $li = $('#pills-tab li').click(function() {
     $li.removeClass('selected');
     $(this).addClass('selected');
 });
+
+const clickLogin = ()=>{
+    let loginbox = document.querySelector('.popup-login');
+    
+    loginbox.style.display = loginbox.style.display == "block" ? "none":"block";
+}
+
+
+const closeClickLogin = ()=>{
+    let loginbox = document.querySelector('.popup-login');
+    
+    loginbox.style.display = "none";
+}
