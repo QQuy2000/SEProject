@@ -18,7 +18,7 @@ body{
     width:80%;
 	right:0;left:0;
     margin:auto;
-    height:80%;
+    height:75%;
     background-color: white;
     border-radius: 5px;
 }
@@ -63,7 +63,7 @@ body{
    width: 500px;
    height: 50px;
    margin: 5px;
-   border: 1px solid #D8722D;
+   border: 1px solid #b5b5b5;
    border-radius: 5px;
 }
 
@@ -76,6 +76,7 @@ body{
     color: white;
     font-weight: 400; 
     border-color: #D8722D;
+    border: 1px solid #D8722D;
 }
 
 .customer__info p a{
