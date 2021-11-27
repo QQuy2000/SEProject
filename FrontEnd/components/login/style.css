@@ -3,7 +3,8 @@ body{
   font-family: 'Mukta', sans-serif;
 	height:100vh;
 	min-height:550px;
-	background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg);
+	/* background-image: url(http://www.planwallpaper.com/static/images/Free-Wallpaper-Nature-Scenes.jpg); */
+    background-image: url(https://ahamove.com/wp-content/uploads/2021/01/TCH-Hoa%CC%80ng-%C4%90a%CC%A3o-Thuy%CC%81.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-position:center;
@@ -41,11 +42,11 @@ a{
     display:none;
 }
 .login-reg-panel{
-    color:#e9e6e6;
+    color:white;
 }
 .login-reg-panel #label-login, 
 .login-reg-panel #label-register{
-    border:1px solid #9E9E9E;
+    border:1px solid white;
     padding:5px 5px;
     width:150px;
     display:block;
@@ -99,8 +100,8 @@ a{
 .login-show input[type="button"] {
     max-width: 150px;
     width: 100%;
-    background: #444444;
-    color: #f9f9f9;
+    background: #fb8d17;
+    color: white;
     border: none;
     padding: 10px;
     text-transform: uppercase;
@@ -124,8 +125,8 @@ a{
 .register-show input[type="button"] {
     max-width: 150px;
     width: 100%;
-    background: #444444;
-    color: #f9f9f9;
+    background: #fb8d17;
+    color: white;
     border: none;
     padding: 10px;
     text-transform: uppercase;
