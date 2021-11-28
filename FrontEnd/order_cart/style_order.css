@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta');
+body{
+  font-family: 'Mukta', sans-serif;
+	height:100vh;
+	min-height:550px;
+    background-image: url(https://ahamove.com/wp-content/uploads/2021/01/TCH-Hoa%CC%80ng-%C4%90a%CC%A3o-Thuy%CC%81.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+    
+}
+
+.cart-panel{
+    position: relative;
+    top: 10%;
+	/* text-align:center; */
+    width:80%;
+	right:0;left:0;
+    margin:auto;
+    height:80%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.back__homepage{
+    text-align: right;
+    padding: 5px;
+    margin-right: 5px;
+    
+}
+
+.back__homepage a,
+.back__homepage a:hover{
+    color: #D8722D;
+}
+
+
+.cart__heading{
+    padding: 10px;
+    margin-top: 10px;
+    text-align:center;
+}
+
+
+.cart-panel .cart-icon{
+    height: 25px;
+    
+}
+
+.cart-panel span{
+    font-size: 35px;
+    /* color: #D8722D; */
+    color: black;
+    font-weight: 600;
+}
+
+.cart__info{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+
+.cart__info h5{
+    color: #D8722D;
+}
+
+.payment_method{
+    margin-bottom: 15px;
+}
+
+.customer__info .info input{
+   width: 450px;
+   height: 50px;
+   margin: 5px;
+   border: 1px solid #b5b5b5;
+   border-radius: 5px;
+}
+
+.customer__info .info input[type="ratio"]{
+    height: 10px;
+    width: 100px;
+}
+.customer__info .info input[type="submit"]{
+    background-color: #D8722D;
+    color: white;
+    font-weight: 400; 
+    border-color: #D8722D;
+    border: 1px solid #D8722D;
+}
+
+.customer__info p a{
+    color: #D8722D;
+    text-decoration: none;
+}
+
+.customer__info p a:hover{
+    text-decoration: underline;
+}
+
+.order__info{
+    width: 35%;
+}
+
+.cart__list{
+    padding-left: 0;
+    list-style: none;
+    max-height: 35vh;
+    overflow-y: scroll;
+}
+
+.cart__item{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.header__cart-img{
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+    border: 1px solid #e8e8e8;
+}
+
+.header__cart-img:hover{
+    cursor: pointer;
+}
+.cart__item-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__item-name{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    max-height: 4rem;
+    overflow: hidden;
+    font-weight: 500;
+    color: #757575;
+    margin: 0;
+    flex: 1;
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+}
+
+.cart__item-head .cart-item-price{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #D8722D;
+}
+
+.cart__item-head .cart-item-multiply{
+    font-size: 0.9rem;
+    margin: 0 4px;
+    color: #757575;
+}
+
+.cart__item-head .cart-item-qtn{
+    font-size: 1rem;
+    color: #757575;
+}
+
+.cart-item-body .cart-item-description{
+    color: #757575;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.calculate_price{
+    padding-left: 0;
+    list-style: none;
+}
+
+.price{
+    margin-top: 40px;
+}
+
+.price__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price__header{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #D8722D;
+}
+
+.price__without-promotion-wrap .price__without-promotion{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #D8722D;
+}
+
+.code__promotion-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #D8722D;
+}
+
+.code__promotion-link:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.total__price{
+    margin-top: 40px;
+    background-color: #D8722D;
+    /* padding: 5px; */
+    border-radius: 5px;
+}
+
+.total__price__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.total__price__wrap .total__price__header{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.total__price__without-promotion-wrap .total__price__without-promotion{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+}
