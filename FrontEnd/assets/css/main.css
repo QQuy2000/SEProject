@@ -388,7 +388,7 @@
     position: fixed;
     width: 100%; 
     height: 100%;
-    background-color: rgba(24, 24, 24, 0.1);
+    background-color: rgba(10, 10, 10, 0.2);
     /* opacity: 0.3; */
     z-index: 1001;
 }
@@ -402,6 +402,7 @@
     background-color: #ffffff;
     /* opacity: 1; */
     z-index: 1002;
+    border-radius: 10px;
     
 } 
 .card_popup_cancel{
@@ -553,3 +554,105 @@
     background-color: #737373 !important;
     cursor: default;
 }
+
+.promotion_popup-container{
+    /* display: none; */
+    top:0;
+    left: 0;
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.2);
+    /* opacity: 0.3; */
+    z-index: 1001;
+}
+
+.promotion_popup-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: #ffffff;
+    /* opacity: 1; */
+    z-index: 1002;
+    border-radius: 8px;
+    
+} 
+
+.promotion_popup-inputcode{
+    padding: 10px;
+    /* border:#737373 solid 1px; */
+}
+.input_code-container{
+    margin: 5px;
+    width: 100%;
+}
+.promotion_popup-inputcode input{
+    border: none;
+    width: auto;
+    margin: 0 5px 0 5px;
+}
+
+.promotion_popup-inputcode .input-group-text{
+    border: none;
+}
+
+.coupon-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0 , 0.1);
+    
+}
+
+.coupon-container img{
+    width: 80px;
+}
+.coupon-information{
+    width: 200px;
+}
+.coupon-information span{
+    color: #b3630d;
+    display: block;
+}
+.coupon-information button{
+    border: none;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin-top: 10px;
+    color: #F9A613;
+    
+
+}
+.input-group-prepend{
+    background-color: #F9A613;
+}
+
+.allcoupon{
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    
+}
+
+.allcoupon::-webkit-scrollbar-track {
+    /* border: 1px solid #000; */
+    padding: 2px 0;
+    /* background-color: #404040; */
+  }
+
+.allcoupon::-webkit-scrollbar {
+    width: 5px;
+    background: #ffffff;
+    border-radius: 8px;
+    color: transparent;
+
+  }
+
+  .allcoupon::-webkit-scrollbar-thumb{
+    background: #fb8d17; 
+    border-radius: 8px;
+
+  }
