@@ -281,7 +281,7 @@ const handlecoupon = (e)=>{
 }
 
 const showPromotion = ()=>{
-    document.querySelector(".promotelink").preve
+    if(document.querySelector(".promotion_popup-container")==null){
     document.querySelector("body").innerHTML = `<div class="promotion_popup-container">
     <div class="promotion_popup-card">
         <div class="card_popup_cancel">
@@ -344,5 +344,8 @@ const showPromotion = ()=>{
         </div>
         
     </div>
-</div>`+ document.querySelector("body").innerHTML;
+</div>`+ document.querySelector("body").innerHTML;}
+        else {
+            document.querySelector(".promotion_popup-container").style.display="block";
+        }
 }
