@@ -758,3 +758,40 @@
     border-radius: 8px;
 
   }
+
+  /* Responsive */
+  /* Mobile & Tablet */
+@media (max-width: 1023px){
+    .footer__logo{
+        display: none;
+    }
+}
+
+
+/* Tablet */ 
+@media (min-width: 740px) and (max-width: 1023px){
+        .footer__tablet:nth-child(3),
+        .footer__tablet:nth-child(4){
+            padding-top: 30px;
+        }
+
+}
+
+
+/* Mobile */
+@media (max-width: 739px){
+    .footer__content{
+        text-align: center;
+    }
+
+    .footer__mobile{
+        padding-top: 40px;
+    }
+
+    .footer__mobile:first-child{
+        padding-top: 10px;
+    }
+    .hour__list{
+        padding: 0 30px;
+    }
+}
