@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea-Rex Cafe</title>
+    <link rel="icon" href="./assets/images/Logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets//css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -154,15 +155,15 @@
 
                         <ul class="header__nav-list ">
                             <li class="header__nav-item">
-                                <a href="" class="header__nav-item--link">HOME</a>
+                                <a href="#" class="header__nav-item--link">HOME</a>
                             </li>
      
                             <li class="header__nav-item">
-                                <a href="" class="header__nav-item--link">ORDER</a>
+                                <a href="#order" class="header__nav-item--link">ORDER</a>
                             </li>
      
                             <li class="header__nav-item"> 
-                                <a href="" class="header__nav-item--link">NEWS</a>
+                                <a href="#new" class="header__nav-item--link">NEWS</a>
                             </li>       
      
                              <li class="header__nav-item">
@@ -291,11 +292,11 @@
             </div>
         </div>
 
-            <div class="product">
-                <div class="container">
+            <div id="order" class="product">
+                <div  class="container">
                     <div class="product__heading">
                         <i class="product__heading-icon fas fa-award"></i>
-                        <span >Products</span>
+                        <span  >Products</span>
                     </div>
 
                     <div >
@@ -408,7 +409,7 @@
                 </div>    
             </div>
                 
-            <div class="news">
+            <div id="new" class="news">
                 <div class="container">
                     <div class="product__heading">
                         <i class="product__heading-icon fas fa-newspaper"></i>
@@ -509,16 +510,16 @@
                           <h5 class="social__heading">Follow #TeaRex on social media</h5>
                           <div class="intouch__content">
                             <!-- <h5>Follow #TeaRex on social media</h5> -->
-                              <a href="" class="social-link">
+                              <a href="https://www.facebook.com/The.Coffee.House.2014" class="social-link">
                                 <i class="socail-icon fab fa-facebook-f"></i>
                               </a>
-                              <a href="" class="social-link">
+                              <a href="https://www.instagram.com/tea_rex120/" class="social-link">
                                 <i class="socail-icon fab fa-instagram"></i>
                              </a>
-                            <a href="" class="social-link">
+                            <a href="https://twitter.com/thecoffeehouse_" class="social-link">
                                 <i class="socail-icon fab fa-twitter"></i>
                             </a>
-                            <a href="" class="social-link">
+                            <a href="https://www.youtube.com/c/THECOFFEEHOUSE2014" class="social-link">
                                 <i class="socail-icon fab fa-youtube"></i>
                             </a>
                           </div>
@@ -529,16 +530,17 @@
                             <div class="site__content">
                                 <ul class="site__list">
                                     <li class="site__item">
-                                        <a href="" class="site__link">HOME</a>
+                                        <a href="#" class="site__link">HOME</a>
                                     </li>
                                     <li class="site__item">
-                                        <a href="" class="site__link">ORDER</a>
+                                        <a href="#order" class="site__link">ORDER</a>
                                     </li>
                                     <li class="site__item">
-                                        <a href="" class="site__link">NEWS</a>
+                                        <a href="#new" class="site__link">NEWS</a>
                                     </li>
                                     <li class="site__item">
-                                        <a href="" class="site__link">PROMOTION</a>
+                                        <!-- <a href="" class="site__link">PROMOTION</a> -->
+                                        <a href="javascript:void(0)" class="site__link" onclick="showPromotion()">PROMOTION</a>
                                     </li>
                                 </ul>
                             </div>

@@ -163,9 +163,7 @@
     
 }
 
-.promotion-container{
 
-}
 .promotion-indicator{
     margin-bottom: -20px !important;
     height: 20px;
@@ -180,8 +178,9 @@
     margin-right: auto;
 }
 
-
-
+.product{
+    padding-top: calc(var(--header-height)/2);
+}
 .product__heading{
     font-size: 28px;
     font-weight: 600;
@@ -297,6 +296,10 @@
     text-align: center;
     color: white;
     cursor: pointer;
+}
+
+.news{
+    padding-top: calc(var(--header-height)/2);
 }
 
 .news-container{
