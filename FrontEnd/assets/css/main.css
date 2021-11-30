@@ -371,6 +371,9 @@
     font-size: 1.8rem;
     font-weight: 600;
 }
+.footer__contact h5{
+    font-size: 1.4rem;
+}
 
 .footer__contact-list{
     list-style: none;
@@ -407,21 +410,27 @@
     color: #b3630d;
 }
 
+.social__heading{
+    font-size: 1.4rem;
+}
+
 .intouch__content{
     text-align: center;
 }
 .social-link{
     color: #b3630d;
+    text-decoration: none;
 }
 
 .social-link:hover{
-    color: var(--white-color);;
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 
 .socail-icon{
     padding:0 5px 0 5px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .site__list{
@@ -434,12 +443,12 @@
     font-size: 1.4rem;
 }
 .site__link{
-    color: #C4C4C4;
+    color: #b3630d;
 
 }
 
 .site__link:hover{
-    color: #b3630d;
+    color: var(--white-color);
     text-decoration: none;
 }
 
