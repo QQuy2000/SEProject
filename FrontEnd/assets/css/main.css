@@ -322,6 +322,30 @@
 .news-content{
     padding: 10px 16px 10px 16px;
 }
+
+/* newsdetail */
+.news__detail{
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: auto 20vh;
+}
+
+.news__details--heading{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.news__detail-picture{
+    padding: 10px 0;
+}
+.news__detail p{
+    padding: 0 10px;
+    margin: 5px 0;
+    font-size: 1.4rem;
+}
+
+/* newsdetail */
+
 .read-all{
     display: flex;
     justify-content: center;

@@ -16,7 +16,7 @@ const  handleNews = async ()=>{
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium ex ac urna tempor, ac ultrices justo aliquet. Aenean viverra urna eu est tincidunt venenatis. </p>
                             <div class="more-button">
                                 <button>
-                                    <a href="#">More</a>
+                                    <a href="./newsdetail.html">More</a>
                                 </button>
                             </div>
                         </div>
